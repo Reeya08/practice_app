@@ -19,10 +19,13 @@ class Login extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("LOGIN" , style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 45,
-                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30),
+                  child: Text("LOGIN" , style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 45,
+                  ),
+                  ),
                 ),
                 SizedBox(height: 250,),
                 TextFormField(
@@ -38,7 +41,7 @@ class Login extends StatelessWidget {
                   ),
                   ),
                 ),
-                SizedBox(height: 45,),
+                SizedBox(height: 30,),
                 TextFormField(
                   decoration: InputDecoration(
                     fillColor: Colors.grey.shade100,
@@ -52,7 +55,7 @@ class Login extends StatelessWidget {
                   ),
                   ),
                 ),
-                SizedBox(height: 30,),
+                SizedBox(height: 20,),
                 Center(
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
@@ -65,9 +68,13 @@ class Login extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                  Text('Dont have an account ?'),
-                  Text('SignUp' , style: TextStyle(color: Colors.blue.shade400), ),
+                  Text('Dont have an account ?' , style: TextStyle(
+                      color: Colors.white,
+                  ),),
+                  Text('SignUp' , style: TextStyle(color: Colors.lightBlueAccent), ),
+
                 ],)
+
               ],
     ),
             ),

@@ -24,9 +24,16 @@ class CreatAccount extends StatelessWidget {
                     ),
                     ),
                   ),
-                  SizedBox(height: 250,),
+                  SizedBox(height: 150,),
                   TextFormField(
                     decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
+                          color: Colors.grey.shade500,
+                        ),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide:  BorderSide(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(15),
@@ -39,6 +46,13 @@ class CreatAccount extends StatelessWidget {
                   SizedBox(height: 30,),
                   TextFormField(
                     decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
+                          color: Colors.grey.shade500,
+                        ),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide:  BorderSide(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(15),
@@ -51,6 +65,13 @@ class CreatAccount extends StatelessWidget {
                   SizedBox(height: 20,),
                   TextFormField(
                     decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
+                          color: Colors.grey.shade500,
+                        ),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide:  BorderSide(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(15),
@@ -64,6 +85,13 @@ class CreatAccount extends StatelessWidget {
                   TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
+                          color: Colors.grey.shade500,
+                        ),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide:  BorderSide(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(15),
@@ -77,6 +105,13 @@ class CreatAccount extends StatelessWidget {
                   TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          width: 3,
+                          color: Colors.grey.shade500,
+                        ),
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide:  BorderSide(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(15),

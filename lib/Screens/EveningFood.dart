@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-class DrinkScreen extends StatelessWidget {
-  const DrinkScreen({Key? key}) : super(key: key);
+
+class EveningFoodScreen extends StatelessWidget {
+  const EveningFoodScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,12 +10,12 @@ class DrinkScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Center(
             child: Text(
-              'DRINKS ',
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
+          'Evening Food ',
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        )),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -37,7 +38,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Soft Drinks',
+                        'Samosa',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -50,7 +51,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/11.jpg",
+                                "images/samosa.jpeg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -79,7 +80,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Special Drinks',
+                        'Chekin Roll',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -92,7 +93,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/14.jpg",
+                                "images/roll.jpeg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -125,7 +126,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Mix Fruit',
+                        'Tea',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -138,7 +139,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/19.jpg",
+                                "images/tea.jpeg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -167,7 +168,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Party Drinks',
+                        'Green Tea',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -180,7 +181,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/25.jpg",
+                                "images/greentea.jpeg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),

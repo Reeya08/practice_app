@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class DrinkScreen extends StatelessWidget {
-  const DrinkScreen({Key? key}) : super(key: key);
+class FastFood extends StatelessWidget {
+  const FastFood({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class DrinkScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Center(
             child: Text(
-              'DRINKS ',
+              'LATE NIGHT',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Soft Drinks',
+                        'Pizza',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -50,7 +50,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/11.jpg",
+                                "images/23.jpg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -79,7 +79,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Special Drinks',
+                        'Burger',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -92,7 +92,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/14.jpg",
+                                "images/15.jpg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -125,7 +125,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Mix Fruit',
+                        'Zinger Burger',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -138,7 +138,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/19.jpg",
+                                "images/8.jpg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),
@@ -167,7 +167,7 @@ class DrinkScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Party Drinks',
+                        'Chekin Wings',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
@@ -180,7 +180,7 @@ class DrinkScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
-                                "images/25.jpg",
+                                "images/26.jpg",
                               ),
                               fit: BoxFit.contain),
                           borderRadius: BorderRadius.circular(4.0),

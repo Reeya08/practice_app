@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:practice_app/Screens/FoodMenu.dart';
 import 'package:practice_app/Screens/RideBooking.dart';
 import 'package:practice_app/Screens/RoomBookingScreen.dart';
 
@@ -51,7 +52,10 @@ class MenuScreen extends StatelessWidget {
           RaisedButton(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(16.0))),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (Context) =>FoodMenu()));
+            },
             child: Text(
               'Refreshment',
               style: TextStyle(color: Colors.white),

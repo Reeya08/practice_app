@@ -4,13 +4,16 @@ import 'package:flutter/material.dart';
 import 'TextField.dart';
 
 class RoomBooking2 extends StatefulWidget {
-
   @override
   State<RoomBooking2> createState() => _RoomBooking2State();
 }
 
 class _RoomBooking2State extends State<RoomBooking2> {
-  bool isChecked= false;
+  bool isCheckedYes = false;
+  bool isCheckedNo = false;
+  bool isCheckedOutSider = false;
+  bool isCheckedlocal = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,13 +40,13 @@ class _RoomBooking2State extends State<RoomBooking2> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(
-                   focusedBorder: OutlineInputBorder(
-                     borderSide: BorderSide(
-                       width: 3,
-                       color: Colors.grey.shade500,
-                     ),
-                     borderRadius: BorderRadius.circular(25),
-                   ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        width: 3,
+                        color: Colors.grey.shade500,
+                      ),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                         width: 3,
@@ -94,29 +97,31 @@ class _RoomBooking2State extends State<RoomBooking2> {
                   ),
                 ),
                 // add check box later
-                  Row(
-                    children: [
-                      Checkbox(
-                      checkColor: Colors.white,
-                       value: isChecked,
-                        onChanged: (isChecked) {
-                        setState(() {
-                          this.isChecked = isChecked!;
-                        });
-                      },
-                      ),
-                Text('yes'),
-                    ],
-                  ),
-                SizedBox(height: 1,),
                 Row(
                   children: [
                     Checkbox(
                       checkColor: Colors.white,
-                      value: isChecked,
-                      onChanged: (isChecked) {
+                      value: isCheckedYes,
+                      onChanged: (isCheckedYes) {
                         setState(() {
-                          this.isChecked = isChecked!;
+                          this.isCheckedYes = isCheckedYes!;
+                        });
+                      },
+                    ),
+                    Text('yes'),
+                  ],
+                ),
+                SizedBox(
+                  height: 1,
+                ),
+                Row(
+                  children: [
+                    Checkbox(
+                      checkColor: Colors.white,
+                      value: isCheckedNo,
+                      onChanged: (isCheckedNo) {
+                        setState(() {
+                          this.isCheckedNo = isCheckedNo!;
                         });
                       },
                     ),
@@ -126,16 +131,20 @@ class _RoomBooking2State extends State<RoomBooking2> {
                 SizedBox(
                   height: 10,
                 ),
-                RowTextField(iconlead: Icons.paid, hintText: '     Nationallity'),
+                RowTextField(
+                    iconlead: Icons.paid, hintText: '     Nationallity'),
                 SizedBox(
                   height: 10,
                 ),
-                RowTextField(iconlead: Icons.person, hintText: '     Driving Liscence'),
+                RowTextField(
+                    iconlead: Icons.person, hintText: '     Driving Liscence'),
                 SizedBox(
                   height: 10,
                 ),
-                RowTextField(iconlead:Icons.copy, hintText: '    Passport'),
-                SizedBox(height: 13,),
+                RowTextField(iconlead: Icons.copy, hintText: '    Passport'),
+                SizedBox(
+                  height: 13,
+                ),
                 //
                 //add check box later
                 Text(
@@ -145,37 +154,43 @@ class _RoomBooking2State extends State<RoomBooking2> {
                       fontSize: 10,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Row(
                   children: [
                     Checkbox(
                       checkColor: Colors.white,
-                      value: isChecked,
-                      onChanged: (isChecked) {
+                      value: isCheckedOutSider,
+                      onChanged: (isCheckedOutSider) {
                         setState(() {
-                          this.isChecked = isChecked!;
+                          this.isCheckedOutSider = isCheckedOutSider!;
                         });
                       },
                     ),
                     Text('Out Sider'),
                   ],
                 ),
-                SizedBox(height: 1,),
+                SizedBox(
+                  height: 1,
+                ),
                 Row(
                   children: [
                     Checkbox(
                       checkColor: Colors.white,
-                      value: isChecked,
-                      onChanged: (isChecked) {
+                      value: isCheckedlocal,
+                      onChanged: (isCheckedlocal) {
                         setState(() {
-                          this.isChecked = isChecked!;
+                          this.isCheckedlocal = isCheckedlocal!;
                         });
                       },
                     ),
                     Text('Local'),
                   ],
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Text(
                   'PAYMENT METHOD',
                   style: TextStyle(
@@ -183,14 +198,19 @@ class _RoomBooking2State extends State<RoomBooking2> {
                       fontSize: 15,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10,),
-                RowTextField(iconlead:Icons.payment, hintText: '     Paypal,Debit Card/Credit Card'),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
+                RowTextField(
+                    iconlead: Icons.payment,
+                    hintText: '     Paypal,Debit Card/Credit Card'),
+                SizedBox(
+                  height: 10,
+                ),
                 Center(
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
-                        borderRadius:
-                        BorderRadius.all(Radius.circular(16.0))),
+                        borderRadius: BorderRadius.all(Radius.circular(16.0))),
                     onPressed: () {},
                     child: Text(
                       'SUBMIT',

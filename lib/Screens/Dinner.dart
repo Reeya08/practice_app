@@ -8,16 +8,17 @@ class DinnerScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Center(
-            child: Text(
-              'DINNER ',
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
+          child: Text(
+            'DINNER ',
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(40.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

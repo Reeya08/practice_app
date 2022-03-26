@@ -37,7 +37,7 @@ class FoodMenu extends StatelessWidget {
                 onPressed: () {
                 },
                 child: Text(
-                  '     LUNCH     ',
+                  '       LUNCH      ',
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.black,
@@ -53,7 +53,7 @@ class FoodMenu extends StatelessWidget {
                       MaterialPageRoute(builder: (Context) =>DinnerScreen()));
                 },
                 child: Text(
-                  'DINNER',
+                  '      DINNER      ',
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.black,
@@ -69,12 +69,12 @@ class FoodMenu extends StatelessWidget {
                       MaterialPageRoute(builder: (Context) => FastFood()));
                 },
                 child: Text(
-                  'LATE NIGHT',
+                  '   LATE NIGHT  ',
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.black,
               ),
-           SizedBox(height: 10,),
+           SizedBox(height: 30,),
               RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(16.0))),
@@ -83,7 +83,7 @@ class FoodMenu extends StatelessWidget {
                       MaterialPageRoute(builder: (Context) => DrinkScreen()));
                 },
                 child: Text(
-                  'DRINKS',
+                  '       DRINKS       ',
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.black,
